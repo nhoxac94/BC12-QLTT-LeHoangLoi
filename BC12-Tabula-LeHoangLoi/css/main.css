@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+header #navbar {
+  background: transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .navbar {
+  max-width: 1200px;
+  margin: auto;
+  height: 80px;
+}
+
+header #navbarIcon img {
+  width: 80px;
+}
+
+header #navbarSupportedContent {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  right: -130px;
+}
+
+header #navbarSupportedContent li {
+  padding-right: 50px;
+}
+
+header #navbarSupportedContent li a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  padding: 0;
+  line-height: 80px;
+}
+
+header #navbarSupportedContent li a::after {
+  content: '';
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: 55%;
+  top: 40px;
+}
+
+header #navbarSupportedContent li a:hover {
+  color: #B61984;
+}
+
+header #navbarSupportedContent li a:hover::after {
+  background-color: #B61984;
+}
+
+header #navbarSupportedContent .active a {
+  color: #B61984;
+}
+
+header #navbarSupportedContent .active a::after {
+  background-color: #B61984;
+}
+
+header .navContact {
+  float: left;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .navContact .btnPhone {
+  background: #B61984;
+  padding: 0.8em 1.2em;
+  margin: 6px;
+  border-radius: 50px;
+  border: 1px solid #B61984;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .navContact .btnPhone:hover {
+  background: #ffffff;
+  color: #B61984;
+}
+
+header .navContact li {
+  margin-left: 1em;
+}
+
+header .navContact a {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #181818;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .navContact a:hover {
+  color: #B61984;
+}
+
+@media screen and (max-width: 1200px) {
+  header #navbar {
+    background: white;
+  }
+  header #navbarIcon {
+    position: relative;
+    top: 0;
+    left: -75%;
+    float: left;
+  }
+  header #navbarIcon img {
+    width: 48px;
+  }
+  header #navbarSupportedContent {
+    background: white;
+    right: 0px;
+    width: 100px;
+  }
+}
+
+.carousel {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.carousel .bgImgTop {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.carousel .bgImgTop img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carouselContent__img img {
+  width: 100%;
+}
+
+.carousel .bgImgBottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.carousel .bgImgBottom img {
+  width: 100%;
+}
+
+.carousel .carouselContent {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel .carouselContent .carouselContent__text {
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+}
+
+.carousel .carouselContent .carouselContent__text p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #B61984;
+}
+
+.carousel .carouselContent .carouselContent__text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel .carouselContent__img {
+    max-width: 580px;
+  }
+  .carousel .carouselContent__img img {
+    width: 100%;
+  }
+}
+
+.teammate {
+  background: #dcd1f2;
+  position: relative;
+}
+
+.teammateContent {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.teammateContent .teammate__item {
+  padding: 0 20px;
+}
+
+.teammateContent .teamamate__wrapitem {
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  margin-top: 40px;
+}
+
+.teammateContent .teamamate__wrapitem:hover {
+  -webkit-box-shadow: 0px 10px 30px grey;
+          box-shadow: 0px 10px 30px grey;
+}
+
+.teammateContent .teamamate__wrapitem .teammate__avata {
+  overflow: hidden;
+}
+
+.teammateContent .teamamate__wrapitem .teammate__avata img {
+  max-width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.teammateContent .teamamate__wrapitem .teammate__avata img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.teammateContent .teamamate__wrapitem .teammate__description p:first-of-type {
+  font-size: 13px;
+  font-weight: 600;
+  color: #B61984;
+  margin-top: 20px;
+  margin-bottom: 0.7em;
+}
+
+.teammateContent .teamamate__wrapitem .teammate__description h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.teammateContent .teamamate__wrapitem .teammate__description p:last-of-type {
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+}
+
+.teammateImgFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.teammateImgFooter img {
+  width: 100%;
+}
+
+.findCourse {
+  margin-top: 60px;
+  position: relative;
+}
+
+.findCourse .findCourse__content {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.findCourse .findCourse__content .findCourse__Form {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 20px 35px -30px;
+          box-shadow: 0 20px 35px -30px;
+  padding: 0 25px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.findCourse .findCourse__content .findCourse__itemImg {
+  width: 100%;
+}
+
+.findCourse .findCourse__content .findCourse__itemForm p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191919;
+  text-align: center;
+}
+
+.findCourse .findCourse__content .form-group {
+  padding-right: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  color: #191919;
+}
+
+.findCourse .findCourse__content .findCourse__iconInput {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  line-height: 1;
+}
+
+.findCourse .findCourse__content .findCourse__iconInput i {
+  font-size: 1em;
+  font-weight: 600;
+  color: #B61984;
+}
+
+.findCourse .findCourse__content .form-group input, .findCourse .findCourse__content .form-group select, .findCourse .findCourse__content .form-group textarea {
+  padding: 1em 1em 1em 3.5em;
+  width: 100%;
+  height: 3.7em;
+  font-size: 0.8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  outline: none;
+}
+
+.findCourse .findCourse__content .form-group input:focus, .findCourse .findCourse__content .form-group select:focus, .findCourse .findCourse__content .form-group textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.findCourse .findCourse__content .form-group textarea {
+  border-radius: 20px;
+  height: 10em;
+}
+
+.findCourse .findCourse__content .form-group select {
+  cursor: pointer;
+}
+
+.findCourse .findCourse__content .btnSubmit {
+  padding-top: 2em;
+  padding-bottom: 40px;
+}
+
+.findCourse .findCourse__content .btnSubmit .btnSent {
+  max-width: 150px;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  line-height: 3.1em;
+  background-color: #B61984;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.findCourse .findCourse__content .btnSubmit .btnSent:hover {
+  background-color: transparent;
+  color: #B61984;
+  border: 1px solid #B61984;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.findCourse .findCourse__imgFooter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.findCourse .findCourse__imgFooter img {
+  width: 100%;
+}
+
+.footer {
+  background-image: url(../img/footer_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer .footerContent {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  color: #ffffff;
+}
+
+.footer .footerItem {
+  padding: 0 40px;
+  font-size: 0.9em;
+}
+
+.footer .footerItem h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2em;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul span {
+  padding-left: 0.9em;
+}
+
+.footer ul i {
+  margin-bottom: 1em;
+}
+
+.footer ul ul li {
+  display: inline-block;
+}
+
+.footer ul ul i {
+  color: #ffffff;
+  padding-right: 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer ul ul i:hover {
+  color: #181818;
+}
+
+.footer .footerItem__link li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: .8em 0;
+}
+
+.footer .footerItem__link li:first-of-type {
+  padding-top: 0;
+}
+
+.footer .footerItem__link li a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .footerItem__link li a:hover {
+  opacity: 0.8;
+}
+
+.footer .form-group {
+  border: none;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+
+.footer input {
+  height: 3.2em;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
+}
+
+.footer .btnEmail {
+  background-color: transparent;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .btnEmail::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .btnEmail:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .btnEmail::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .btnEmail::placeholder {
+  color: #ffffff;
+}
+
+.footer .btnEmail:focus {
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer .btnSubmit {
+  font-weight: 600;
+  -webkit-box-shadow: 0 0 0 3em #fff inset;
+          box-shadow: 0 0 0 3em #fff inset;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .btnSubmit:hover {
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1px #b61984 inset;
+          box-shadow: 0 0 0 1px #b61984 inset;
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+          box-shadow: 0 0 0 1px #fff inset;
+  background-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */

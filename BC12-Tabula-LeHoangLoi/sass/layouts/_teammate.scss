@@ -1,0 +1,72 @@
+
+.teammate {
+    background: #dcd1f2;
+    position: relative;
+   
+}
+
+.teammateContent {
+    max-width: 1200px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    
+    
+    .teammate__item {
+        padding:  0 20px;
+        
+    }
+    .teamamate__wrapitem {
+        background: $bg-white;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 1s;
+        margin-top: 40px;
+        
+        &:hover {
+            box-shadow:0px 10px 30px grey ;
+        }
+        .teammate__avata {
+            overflow: hidden;
+            img {
+                max-width:100%;
+                
+                transition: all 1s;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                
+                
+            }
+        }
+    
+        .teammate__description {
+            
+    
+            p:first-of-type {
+                @include styleText($fs-1,$fw-3, $color-pink);
+                margin-top: 20px;
+                margin-bottom: 0.7em;
+            }
+            h3 {
+                @include styleText($fs-4, $fw-4, $color-black-2)
+            }
+            p:last-of-type {
+                @include styleText(15px, $fw-1, $color-black-1)
+            }
+        }
+    }
+
+    
+}
+
+.teammateImgFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    img {
+        width: 100%;
+    }
+}

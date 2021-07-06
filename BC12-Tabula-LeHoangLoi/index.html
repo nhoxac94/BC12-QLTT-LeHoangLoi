@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Out Team - Wavy</title>
+
+    <!-- GG FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbarContent fixed-top"  id="navbar">
+        <nav class="navbar navbar-expand-xl p-0"> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+          </button>  
+          <a class="navbar-brand" id="navbarIcon" href="#">
+            <img src="./img/tabula.png" class="navbar-brand" alt=""/>
+              </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav m-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elements</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="collapse navbar-collapse navContact">
+            <a href="" class="btnPhone"
+              ><i class="fa fa-phone"></i> (+1) 555 234-8765</a
+            >
+            <ul class="navbar-nav m-0">
+              <li class="nav-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="carousel">
+      <div class="bgImgTop">
+        <img src="./img/background-img-top.png" alt="" />
+      </div>
+      <div class="carouselContent row">
+        <div class="carouselContent__text col-sm d-flex align-items-center">
+          <div class="carouselContent__textContent col-12 col-lg">
+            <p>ABOUT US</p>
+            <h1>The language teaching experts</h1>
+          </div>
+        </div>
+        <div class="carouselContent__img col-lg">
+          <img src="./img/hero_team.png" alt="" />
+        </div>
+      </div>
+      <div class="bgImgBottom">
+        <img src="./img/purple_bottom.png" alt="" />
+      </div>
+    </section>
+
+    <section class="teammate">
+      <div class="teammateContent row" id="teacherTeam">
+        <!-- <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_1.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>ITALIAN</p>
+              <h3>July Roberts</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_2.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>FRENCH</p>
+              <h3>Jon Stone</h3>
+              <p>Nanotechnology immersion along the information.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_3.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>JAPANESE</p>
+              <h3>Emma Stone</h3>
+              <p>Bring to the table win-win survival strategies to ensure.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_4.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>CHINESE</p>
+              <h3>Mark Lee</h3>
+              <p>Proactive domination. At the end of the day, going forward.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_5.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>RUSSIAN</p>
+              <h3>John Doe</h3>
+              <p>A new normal that has evolved from generation X.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_6.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>SWEDEN</p>
+              <h3>Jane Smith</h3>
+              <p>Heading towards a streamlined cloud solution.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_7.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>SPANISH</p>
+              <h3>Hanna Alverez</h3>
+              <p>Content in real-time will have multiple touchpoints.</p>
+            </div>      
+          </div>              
+        </div>
+        <div class="teammate__item col-6 col-lg-3">
+          <div class="teamamate__wrapitem">
+            <div class="teammate__avata">
+              <img src="./img/teacher_8.jpg" alt="">
+            </div>
+            <div class="teammate__description">
+              <p>ITALIAN</p>
+              <h3>July Roberts</h3>
+              <p>Capitalize on low hanging fruit to identify a ballpark.</p>
+            </div>      
+          </div>              
+        </div> -->
+       
+      </div>
+      <div class="teammateImgFooter">
+        <img src="./img/Wave_White_bottom_right_shape_01.png" alt="">
+      </div>
+
+    </section>
+
+    <section class="findCourse">
+      <div class="findCourse__content">
+       
+        <div class="findCourse__item row">
+          <div class="findCourse__itemImg col-12 col-lg-7">
+            <img src="./img/conatct_inner.png" alt="">
+          </div>
+          <div class="findCourse__itemForm col-12 col-lg-5">
+            <div class="findCourse__Form">
+          
+              <form action="">
+                <p>Find Your Course</p>
+                <div class="form-row m-0">                
+                  <div class="form-group col-6">
+                    <div class="findCourse__iconInput">
+                      <i class="fa fa-user-alt"></i>
+                    </div>
+                    <div class="findCourse__inputContent">
+                      <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <div class="findCourse__iconInput">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="findCourse__inputContent">
+                      <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                  </div>                              
+                </div>
+                <div class="form-group ">
+                  <div class="findCourse__iconInput">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="findCourse__inputContent">                  
+                    <select class="form-control">
+                      <option selected >English</option>
+                      <option>French</option>
+                      <option>Spanish</option>
+                      <option>German</option>
+                    </select>
+                  </div> 
+                                            
+                </div>
+                <div class="form-group">
+                  <div class="findCourse__iconInput">
+                    <i class="fa fa-comment-alt"></i>
+                  </div>
+                  <div class="findCourse__inputContent">
+                   <textarea name="" id="" cols="3" rows="3" placeholder="Message"></textarea>
+                  </div>                           
+                </div>
+                <div class="btnSubmit">
+                  <input type="submit" class="btnSent" value="SEND">
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="findCourse__imgFooter">
+        <img src="./img/accent_bottom_wave_01.png" alt="">
+      </div>
+    </section>
+
+    <section class="footer">      
+      <div class="footerContent row">
+        <div class="footerItem col-6 col-lg-3">
+          <h4>Contact us</h4>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker-alt"></i>
+              <span>Franklin St, Greenpoint Ave</span>
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>
+              <span>+2342 5446 67</span>
+            </li>
+            <li>
+              <i class="fa fa-calendar-check"></i>
+              <span>Monday - Friday: 8 AM - 5 PM</span>
+            </li>
+            <li>
+                <ul>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-youtube"></i></a></li>
+
+                </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footerItem col-6 col-lg-3 footerItem__link">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Schedule</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItem col-6 col-lg-3 footerItem__link">
+          <h4>About</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Get Quote</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footerItem col-6 col-lg-3 ">
+          <h4>Newsletter</h4>
+          <form action="">
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" class="btnEmail">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="SUBSCRIBE" class="btnSubmit">
+            </div>
+            
+          </form>
+        </div>
+      </div>
+
+     
+    </div>
+    </section>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <script>
+    
+    var prevScrollpos = window.pageYOffset; 
+
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;            
+      if (currentScrollPos == 0) {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbarIcon").style.display = "block";
+        document.getElementById("navbar").style.background = 'transparent';
+
+        
+      } else if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "-100px";
+        setTimeout(function(){
+        document.getElementById("navbar").style.top = "0";
+        },500);
+      } else {
+        document.getElementById("navbar").style.background = '#ffffff';
+        document.getElementById("navbarIcon").style.display = "none";
+        document.getElementById("navbar").style.top = "-100px";
+        setTimeout(function(){
+        document.getElementById("navbar").style.top = "0";
+        },500);
+        // document.getElementById("navbar").style.top = "0";
+
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../app/models/User.js"></script>
+  <script src="../app/services/UserServices.js"></script>
+  <script src="./js/main.js"></script>
+
+
+</html>

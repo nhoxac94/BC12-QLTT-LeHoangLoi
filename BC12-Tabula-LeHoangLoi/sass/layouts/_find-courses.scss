@@ -1,0 +1,104 @@
+.findCourse {
+    margin-top: 60px;
+    position: relative;
+    .findCourse__content {
+        max-width: 1000px;
+        margin: auto;
+        position: relative;
+        z-index: 10;
+        .findCourse__Form {
+            border-radius: 10px;
+            box-shadow: 0 20px 35px -30px;
+            padding: 0 25px;
+            background-color:$bg-white;
+            z-index: 10;
+
+        }
+        .findCourse__itemImg {
+            width:100%;
+        }
+        .findCourse__itemForm {
+            
+            p {
+                @include styleText($fs-5,$fw-4,$color-black-2);
+                text-align: center;
+            }
+        }  
+
+        .form-group {
+                padding-right: 1em;
+                padding-bottom: 1em;
+                position: relative;                
+                color: $color-black-2;
+        }
+        .findCourse__iconInput{
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            line-height: 1;
+            
+            i {
+                @include styleText(1em, $fw-3, $color-pink);
+                
+            }
+        }
+        
+        .form-group {
+
+            input, select, textarea{
+                padding: 1em 1em 1em 3.5em;
+                width:100%;
+                height: 3.7em;
+                font-size: 0.8em;
+                border: 1px solid rgba(0,0,0,.1);
+                border-radius: 50px;
+                outline:none;
+                &:focus {
+                    border: 1px solid rgba(0,0,0,.3);
+                    box-shadow: 0 0 4px 0 rgba(0, 0, 0 , 0.1);
+                }
+                
+            }
+    
+            textarea {
+                border-radius: 20px;
+                height: 10em;
+            }
+    
+            select {
+                cursor: pointer;
+            } 
+        }
+        .btnSubmit {
+            padding-top: 2em;
+            padding-bottom: 40px;
+            .btnSent {
+                max-width: 150px;
+                width: 100%;               
+                border-radius: 50px;
+                border: 1px solid transparent;
+                line-height: 3.1em;
+                background-color: $bg-pink ; 
+                color: $color-white;
+                font-weight: $fw-3;
+                box-shadow: 0 0 0 3em #b61984 inset;
+                transition: all .5s;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-pink;
+                    border: 1px solid $color-pink;
+                    box-shadow: none;
+                }
+            }         
+        }      
+    }
+    .findCourse__imgFooter {
+        position:absolute;
+        left:0;
+        bottom:0;
+        z-index: 0;
+        img {
+            width: 100%;
+        }
+    }
+}

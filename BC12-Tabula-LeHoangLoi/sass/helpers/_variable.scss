@@ -1,0 +1,48 @@
+// color 
+$color-black-1 : #181818;
+$color-black-2 : #191919;
+$color-white : #ffffff;
+$color-pink : #B61984;
+
+// FONT SIZE 
+$fs-1: 13px;
+$fs-2: 0.75rem;
+$fs-3: 1.1rem;
+$fs-4: 1.55rem;
+$fs-5: 2.5rem;
+$fs-6: 3.8rem;
+$fs-7: 0.9em;
+
+// FONT WEIGHT
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+// BACKGROUND
+
+$bg-pink: #B61984;
+$bg-white: #ffffff;
+
+// BORDER-RADIUS
+
+$bd-radius: 50px;
+
+// PADDING BUTTONS
+
+$py: 1.1em;
+$px: 1.5em;
+
+// MARGIN BUTTON
+$m-btn: 6px;
+
+// BORDER WIDTH 
+$bd-width-1: 1px;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+);

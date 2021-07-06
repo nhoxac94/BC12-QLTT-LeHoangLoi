@@ -1,0 +1,115 @@
+header {
+    #navbar {
+        background: transparent;
+        transition: all 0.5s;
+    }
+    .navbar {
+        max-width: 1200px;
+        margin: auto;
+        height:80px;
+        
+    }
+    
+    #navbarIcon {
+        img {
+            width: 80px;            
+        }
+    }
+    #navbarSupportedContent {
+        justify-content: flex-end;
+        position: relative;
+        right: -130px;
+    
+        li {
+            padding-right: 50px;                 
+            a {
+                @include styleText(13px, $fw-3, $color-black-1 );
+                padding: 0;
+                line-height:80px;
+                &::after {
+                    content:'';
+                    background-color: transparent;
+                    height:8px;
+                    width:8px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    position: relative;
+                    right: 55%;
+                    top: 40px;
+                
+                }
+                &:hover {
+                    color: $bg-pink;
+                    &::after {
+                        background-color: $bg-pink;
+                    }
+                }           
+            
+            }
+        }
+        .active {
+            a {
+                color: $bg-pink;
+                &::after {
+                background-color: $bg-pink; 
+            }
+                             
+        }     
+        }
+    }
+    .navContact {
+        float: left;
+        justify-content: flex-end;
+        .btnPhone {
+            @include styleButton($bg-pink, 0.8em, 1.2em, $m-btn, $bd-width-1, $color-pink, $bd-radius); 
+            @include styleText($fs-7,$fw-2, $color-white);
+            text-decoration: none;
+            transition: all 0.5s;
+            &:hover {
+                @include styleButtonHover($bg-white, $color-pink,)
+            }
+        }
+        
+
+        li {
+            margin-left: 1em;           
+        }
+        a {
+            @include styleText($fs-7, $fw-3, $color-black-1 );
+            transition: all 0.5s;
+            &:hover {
+                color: $color-pink;
+            }
+        }
+        
+    }
+
+}
+
+
+// Responsive 
+
+@include responsive(extra-large) {
+    header {
+        #navbar {
+        background: white;
+       
+    }
+    #navbarIcon {
+        position: relative;
+        top: 0;
+        left: -75%;
+        float: left;
+        img {
+            width: 48px;    
+                    
+        }
+    }
+   #navbarSupportedContent {
+       background:white;
+       right:0px;
+       width: 100px;
+   }
+   
+}
+}

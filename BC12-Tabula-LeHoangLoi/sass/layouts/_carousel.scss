@@ -1,0 +1,54 @@
+.carousel {
+  width: 100%;
+  padding-top: 80px;
+  .bgImgTop {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+   
+  }
+  .carouselContent__img {
+    img {
+      width: 100%;
+    }
+  }
+  .bgImgBottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    img {
+    width: 100%;   
+
+    }    
+    
+  }
+
+  .carouselContent {
+    max-width: 1200px;
+    margin: auto;
+    .carouselContent__text {
+      p {
+        @include styleText($fs-3, $fw-4, $color-pink);
+      }
+      h1 {
+        @include styleText($fs-5, $fw-4, $color-black-2);
+      }
+      align-content: baseline;
+    }
+  }
+}
+
+@include responsive('large') {
+  .carousel {
+    .carouselContent__img {
+      max-width:580px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

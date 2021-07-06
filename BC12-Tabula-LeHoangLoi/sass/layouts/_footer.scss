@@ -1,0 +1,107 @@
+.footer {
+    background-image: url(/BC12-Tabula-LeHoangLoi/img/footer_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .footerContent {        
+        max-width: 1280px;
+        margin:auto;        
+        padding-top:  8em;
+        padding-bottom: 8em;
+        color: $bg-white;    
+        
+    }
+    .footerItem {
+        padding: 0 40px ;
+        font-size: $fs-7;
+        h4 {
+            @include styleText($fs-4, $fw-4, $color-white);
+            margin-bottom: 2em;
+        }
+
+    }
+    ul {
+        list-style: none;
+        span {
+            padding-left: 0.9em;
+           
+        }
+        i {
+            margin-bottom: 1em;
+        }
+        ul {
+            li {
+                display: inline-block;
+            }
+            
+            i {
+                color: $color-white;
+                padding-right: 1em;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-black-1; 
+                }
+            }
+        }
+    }
+    .footerItem__link {
+        li {
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            line-height:1;
+            &:first-of-type {
+                padding-top: 0;
+            }
+            padding: .8em 0;
+            a {
+                text-decoration:none;
+                color: $color-white;
+                transition: all 0.5s;
+                &:hover {
+                    opacity: 0.8;
+                }
+                
+            }
+        }
+    }
+    .form-group {
+        border: none;
+        padding-bottom: 0.5em;
+        margin: 0;
+    }
+    input {
+        height: 3.2em;
+        border-radius:50px;
+        border: 1px solid rgba(255,255,255,0.2);
+        text-align:center;
+        width: 100%;        
+    }
+    .btnEmail {
+        background-color: transparent;
+        font-weight: $fw-4;   
+        outline: none;
+        transition: all 0.5s;
+        &::placeholder {
+            color: $color-white;   
+        }
+        
+        &:focus {
+            border: 1px solid rgba(255,255,255,1);
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+        }
+       
+        
+    }
+    .btnSubmit {
+        font-weight: $fw-3;
+        box-shadow: 0 0 0 3em #fff inset;
+        transition: all 0.5s;
+        
+        &:hover {
+            color: $color-white;
+            box-shadow: 0 0 0 1px #b61984 inset;
+            box-shadow: 0 0 0 1px #fff inset;
+            background-color: transparent;
+        }
+    }
+}

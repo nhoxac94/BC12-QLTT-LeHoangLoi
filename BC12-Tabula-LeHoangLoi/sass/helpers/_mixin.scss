@@ -1,0 +1,29 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin styleButton($bg, $py, $px,$m-btn, $bd-width, $color, $bd-radius) {    
+    background: $bg;
+    padding:$py $px ;
+    margin: $m-btn;    
+    border-radius:$bd-radius;
+    border: $bd-width solid $color;
+}
+
+@mixin styleButtonHover($bg, $color) {
+    background: $bg;    
+    color: $color ;   
+}
+
+@mixin responsive($screen) {
+    @if (map-has-key($map: $breakpoints, $key:$screen )) {
+        $value: map-get($map:$breakpoints , $key:$screen );
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    }@else {
+        @error 'Screen does not exit!!'
+    }
+}
