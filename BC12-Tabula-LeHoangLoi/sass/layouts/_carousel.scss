@@ -18,11 +18,10 @@
   }
   .bgImgBottom {
     position: absolute;
-    bottom: 0px;
+    bottom: -35px;
     left: 0;
     img {
-    width: 100%;   
-
+    width: 100%; 
     }    
     
   }
@@ -35,7 +34,7 @@
         @include styleText($fs-3, $fw-4, $color-pink);
       }
       h1 {
-        @include styleText($fs-5, $fw-4, $color-black-2);
+        @include styleText($fs-6, $fw-4, $color-black-2);
       }
       align-content: baseline;
     }

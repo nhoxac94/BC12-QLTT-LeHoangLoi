@@ -2,7 +2,7 @@
 .teammate {
     background: #dcd1f2;
     position: relative;
-   
+    top: 30px;
 }
 
 .teammateContent {
@@ -53,6 +53,8 @@
                 @include styleText($fs-4, $fw-4, $color-black-2)
             }
             p:last-of-type {
+                padding: 0 10px;
+                margin-bottom: 30px;
                 @include styleText(15px, $fw-1, $color-black-1)
             }
         }

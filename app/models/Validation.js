@@ -10,11 +10,17 @@ function Validation() {
     return false;
   };
 
-  this.checkDuplicate = function (value, users, itemCheck, idShowMess, mess) {
-    isDuplicate = false;
+  this.checkDuplicate = function (value, users, itemCheck, idShowMess, mess, originalTaiKhoan) {
+    var isDuplicate = false;    
+    
+    console.log(value != originalTaiKhoan);
     for (var i = 0; i < users.length && !isDuplicate; i++) {
-      isDuplicate = users[i][itemCheck].includes(value) ? true : false;
+      console.log(value !== originalTaiKhoan);
+      if (users[i][itemCheck].includes(value) && value !== originalTaiKhoan ){
+        isDuplicate = true;
+      }
     }
+    
 
     if (!isDuplicate) {
       getEle(idShowMess).style.display = "none";
@@ -26,6 +32,19 @@ function Validation() {
     getEle(idShowMess).innerHTML = `<p class = "text-danger">${mess}</p>`;
     return false;
   };
+
+  this.checkCharsAndNum = function (value, idShowMess, mess) {
+    var regexCharsAndNum = /^[a-zA-Z0-9_]+$/
+    if (regexCharsAndNum.test(value)) {
+      getEle(idShowMess).style.display = "none";
+      getEle(idShowMess).innerHTML = "";
+      return true;
+    }
+    getEle(idShowMess).style.display = "block";
+    getEle(idShowMess).innerHTML = `<p class = "text-danger">${mess}</p>`;
+    return false;
+  };
+
 
   this.checkName = function (value, idShowMess, mess) {
     var regexName = /^[a-zA-Z ]+$/;

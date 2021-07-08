@@ -7,6 +7,10 @@ header {
         max-width: 1200px;
         margin: auto;
         height:80px;
+        .navbar-toggler-icon i {
+            @include styleText(30px, $fw-3, $color-black-1 );
+            
+        }
         
     }
     
@@ -15,6 +19,8 @@ header {
             width: 80px;            
         }
     }
+
+    
     #navbarSupportedContent {
         justify-content: flex-end;
         position: relative;
@@ -36,12 +42,14 @@ header {
                     position: relative;
                     right: 55%;
                     top: 40px;
+                    transition: all 0.5s;
                 
                 }
                 &:hover {
-                    color: $bg-pink;
+                    color: $bg-pink;                    
                     &::after {
                         background-color: $bg-pink;
+                        transform: scale(1.2);
                     }
                 }           
             
@@ -92,17 +100,21 @@ header {
 @include responsive(extra-large) {
     header {
         #navbar {
-        background: white;
-       
+        background: white!important;
+        
     }
-    #navbarIcon {
-        position: relative;
-        top: 0;
-        left: -75%;
-        float: left;
+    .navbar {       
+        justify-content:flex-start;
+        height: auto;
+        
+    }
+    .navbar-toggler {
+        margin-left: 15px;        
+    }
+    #navbarIcon {     
+        display : inline-block!important;   
         img {
-            width: 48px;    
-                    
+            width: 48px;                        
         }
     }
    #navbarSupportedContent {

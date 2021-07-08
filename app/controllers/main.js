@@ -6,10 +6,11 @@ var userService = new UserService();
 var validation = new Validation();
 var listDataUser = [];
 
-function validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh ) {
-  var isValid = true;
+function validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh, originalTaiKhoan) {
+  var isValid = true; 
   isValid &= validation.checkEmpty(taiKhoan, "errorTaiKhoan", `(*) Vui lòng nhập tài khoản người dùng` )
-          && validation.checkDuplicate (taiKhoan, listDataUser, 'taiKhoan', "errorTaiKhoan", `(*) Tài khoản đã tồn tại!`)
+          && validation.checkDuplicate (taiKhoan, listDataUser, 'taiKhoan', "errorTaiKhoan", `(*) Tài khoản đã tồn tại!`,originalTaiKhoan)
+          && validation.checkCharsAndNum (taiKhoan, "errorTaiKhoan", `(*) Tài khoản bao gồm chữ và số`)       
   
   isValid &= validation.checkEmpty (hoTen, "errorHoTen", `(*) Vui lòng nhập học tên người dùng`)
           && validation.checkName(hoTen, "errorHoTen", `(*) Họ tên người dùng không chưa số và kí tự đặc biệt`)
@@ -62,14 +63,13 @@ function addNewUser() {
         console.log(err);
     })
 
-  
+  alert ('Thêm User thành công')
 }
 
 // Thêm nút thêm người dùng cho modal
 
 getEle("btnThemNguoiDung").addEventListener("click", function () {
   getEle('formInput').reset();
-  console.log(document.querySelectorAll('.form-group>p')); 
   document.querySelectorAll('.form-group>p').forEach(function(value) {
     value.style.display = 'none';
 
@@ -96,7 +96,6 @@ function removeUser(id) {
 
 
 function updateUser(id) {
-
   var taiKhoan = getEle("TaiKhoan").value;
   var hoTen = getEle("HoTen").value;
   var matKhau = getEle("MatKhau").value;
@@ -105,8 +104,10 @@ function updateUser(id) {
   var ngonNgu = getEle("loaiNgonNgu").value;
   var moTa = getEle("MoTa").value;
   var hinhAnh = getEle("HinhAnh").value;
-
-  var isValid = validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh);  
+  
+  var originalTaiKhoan = listDataUser[id-1].taiKhoan;
+  var isValid = validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh, originalTaiKhoan);  
+  console.log(originalTaiKhoan);
   if (!isValid) return;
 
   var user = new User(taiKhoan,hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh);
@@ -138,8 +139,7 @@ function checkUser(id) {
           getEle("loaiNguoiDung").value = inforUser.loaiND;
           getEle("loaiNgonNgu").value = inforUser.ngonNgu;
           getEle("MoTa").value = inforUser.moTa;
-          getEle("HinhAnh").value = inforUser.hinhAnh;
-
+          getEle("HinhAnh").value = inforUser.hinhAnh;          
           document.querySelector(".modal-footer").innerHTML = `
             <button class="btn btn-success" id="btnUpdateUser" onclick = "updateUser('${inforUser.id}')"> Cập nhật</button>
           `;
