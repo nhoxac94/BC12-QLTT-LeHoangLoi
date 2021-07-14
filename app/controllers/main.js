@@ -48,7 +48,7 @@ function addNewUser() {
   var moTa = getEle("MoTa").value.trim();
   var hinhAnh = getEle("HinhAnh").value.trim();
 
-   var isValid = validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh, isValid)
+  var isValid = validate(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh, isValid)
 
   if (!isValid) return;
 
@@ -74,6 +74,8 @@ getEle("btnThemNguoiDung").addEventListener("click", function () {
     value.style.display = 'none';
 
   })
+  
+
   document.querySelector(".modal-footer").innerHTML = `
             <button class="btn btn-success" id="btnAddUser"> Thêm người dùng</button>
         `;

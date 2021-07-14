@@ -100,14 +100,20 @@ header .navContact .btnPhone {
   font-size: 0.9em;
   font-weight: 500;
   color: #ffffff;
+  border: 1px solid transparent;
   text-decoration: none;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 header .navContact .btnPhone:hover {
-  background: #ffffff;
+  background-color: transparent;
   color: #B61984;
+  border: 1px solid #B61984;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header .navContact li {
@@ -409,7 +415,7 @@ header .navContact a:hover {
 }
 
 .footer {
-  background-image: url(../../img/footer_background.jpg);
+  background-image: url(../img/footer_background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -71,10 +71,16 @@ header {
         .btnPhone {
             @include styleButton($bg-pink, 0.8em, 1.2em, $m-btn, $bd-width-1, $color-pink, $bd-radius); 
             @include styleText($fs-7,$fw-2, $color-white);
+            border: 1px solid transparent;
             text-decoration: none;
+            box-shadow: 0 0 0 3em #b61984 inset;
             transition: all 0.5s;
+            
             &:hover {
-                @include styleButtonHover($bg-white, $color-pink,)
+                background-color: transparent;
+                color: $color-pink;
+                border: 1px solid $color-pink;
+                box-shadow: none;
             }
         }
         
